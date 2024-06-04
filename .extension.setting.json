@@ -1,0 +1,23 @@
+{
+    "application_manifest": {
+        "manifest_version": 3,
+        "name": "your application name",
+        "description": "your application description",
+        "version": "0.0.1",
+        "permissions": []
+    },
+    "content_scripts_inject_rules": [
+        {
+            "inject_url": "",
+            "entry_point": "src-scripts/content-scripts/inject-a.ts"
+        },
+        {
+            "inject_url": "",
+            "entry_point": "src-scripts/content-scripts/inject-b.ts"
+        }
+    ],
+    "background_script": "src-scripts/background-script/index.ts",
+    "page_ui": {
+        "popup": "src-pages/popup/index.html"
+    }
+}
